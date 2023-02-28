@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+#cv-form {
+  /* display: none; */
+  font-family: "Montserrat", sans-serif;
+  background-color: #c3bbff;
+  border: 1px solid grey;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+#cv-template,
+#download-button {
+  display: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 1px solid grey;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.myimg {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.background {
+  background-color: #2e37a8;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="file"]:hover {
+  border-color: #999;
+}
+
+input[type="file"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 126, 255, 0.5);
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease-in-out;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6cb2eb;
+}
+
+#nameT1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#contactT,
+#addressT {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#fbT,
+#instaT,
+#linkedT {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#fbT:hover,
+#instaT:hover,
+#linkedT:hover {
+  text-decoration: underline;
+}
+
+.card {
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem;
+}
+.card-body {
+  padding: 1rem;
+}
+#objectiveT {
+  font-size: 1.1rem;
+}
+#weT,
+#aqT {
+  margin-left: 0;
+  padding-left: 0;
+}
+#weT li,
+#aqT li {
+  margin-left: 10px;
+  margin-bottom: 0.5rem;
+}

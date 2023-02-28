@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Resume Maker</title>
+  </head>
+  <body>
+    <div class="container" id="cv-form">
+      <div>
+        <h1 class="text-center my-2">Resume Maker</h1>
+        <p class="text-center">By Avik Nayak</p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <!-- first col -->
+          <h3>Personal information</h3>
+
+          <div class="form-group">
+            <label for="nameField">Your name</label>
+            <input
+              type="text"
+              id="nameField"
+              placeholder="Enter here"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group mt-2">
+            <label for="contactField">Your Contact</label>
+            <input
+              type="text"
+              id="contactField"
+              placeholder="Enter here"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group mt-2">
+            <label for="addressField">Your Address</label>
+            <textarea
+              id="addressField"
+              placeholder="Enter here"
+              class="form-control"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="">Select your profile picture</label>
+            <input id="imgField" type="file" class="form-control" />
+          </div>
+
+          <p class="text-secondary my-3">Important Links</p>
+
+          <div class="form-group mt-2">
+            <label for="fbField">Facebook</label>
+            <input
+              type="text"
+              id="fbField"
+              placeholder="Enter here"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group mt-2">
+            <label for="instaField">Instagram</label>
+            <input
+              type="text"
+              id="instaField"
+              placeholder="Enter here"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group mt-2">
+            <label for="linkedField">LinkedIn</label>
+            <input
+              type="text"
+              id="linkedField"
+              placeholder="Enter here"
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- second column -->
+          <h3>Professional Information</h3>
+
+          <div class="form-group mt-2">
+            <label for="">Objective</label>
+            <textarea
+              id="objectiveField"
+              rows="5"
+              placeholder="Enter here"
+              class="form-control"
+            ></textarea>
+          </div>
+
+          <div class="form-group mt-2" id="we">
+            <label for="">Work Experience</label>
+            <textarea
+              rows="3"
+              placeholder="Enter here"
+              class="form-control weField"
+            ></textarea>
+            <!-- new textarea -->
+            <div class="container text-center mt-2" id="weAddButton">
+              <button onclick="addNewWEField()" class="btn btn-dark btn-sm">
+                Add
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group mt-2" id="aq">
+            <label for="">Academic Qualification</label>
+            <textarea
+              rows="3"
+              placeholder="Enter here"
+              class="form-control aqField"
+            ></textarea>
+            <div class="container text-center mt-2" id="aqAddButton">
+              <button onclick="addNewAQField()" class="btn btn-dark btn-sm">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mt-3">
+        <button onclick="createCV()" class="btn btn-dark btn-lg">
+          Create CV
+        </button>
+      </div>
+    </div>
+
+    <!-- cv template -->
+    <div class="container mt-4" id="cv-template">
+      <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+          <!-- first col -->
+          <img
+            src="https://st2.depositphotos.com/1502311/12020/v/950/depositphotos_120206860-stock-illustration-profile-picture-vector.jpg"
+            alt=""
+            class="img-fluid myimg"
+            id="imgTemplate"
+          />
+
+          <div class="container mt-2">
+            <p id="nameT1">Avik Nayak</p>
+            <p id="contactT">+9457344372</p>
+            <p id="addressT">34567/45879 Sector 5 Kolkata , India</p>
+            <hr />
+            <p>
+              <a id="fbT" href="#">https://www.facebook.com/Learnwebcode</a>
+            </p>
+            <p>
+              <a id="instaT" href="#">https://www.instagram.com/Learnwebcode</a>
+            </p>
+            <p>
+              <a id="linkedT" href="#"
+                >https://www.linkedin.com/SteveGriffith</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="col-md-8 my-5">
+          <!-- second col -->
+          <h1 id="nameT2" class="text-center" style="font-weight: 800">
+            Avik Nayak
+          </h1>
+
+          <!-- objective card  -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Objective</h3>
+            </div>
+            <div class="card-body">
+              <p id="objectiveT">
+                An excellent academic record, ability to understand and test
+                software, working knowledge of Azure, and a strong understanding
+                of core internet technologies. I seek to work as a System
+                Engineer to further my knowledge in the IT domain and utilize my
+                skills.
+              </p>
+            </div>
+          </div>
+
+          <!-- work experience -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Work Experience</h3>
+            </div>
+            <div class="card-body">
+              <ul id="weT">
+                <li>
+                  As a Business Analyst at ABC Corporation, I conducted
+                  extensive business analysis to identify areas of improvement
+                  for the organization. Through effective change management
+                  strategies, I was able to implement new processes that
+                  increased efficiency and resulted in a 15% reduction in
+                  expenses.
+                </li>
+                <li>
+                  As an Administrative Assistant at XYZ Corporation, I was
+                  responsible for maintaining accurate records, coordinating
+                  travel arrangements, and managing office supplies. With
+                  attention to detail, I successfully oversaw budget control for
+                  the department, resulting in a 10% decrease in expenses.
+                </li>
+                <li>
+                  egotiated (action verb) with office supplies vendors (specific
+                  duty), saving the company $12,000 annually (quantified
+                  achievement). Redesigned the e-commerce sales funnel through
+                  A/B testing, resulting in increasing monthly revenue by 112%.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- academic qualification -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Academic Qualification</h3>
+            </div>
+            <div class="card-body">
+              <ul id="aqT">
+                <li>
+                  Master of Business Administration, Harvard University, Boston,
+                  MA, 2022 (GPA: 3.9)
+                </li>
+                <li>
+                  Bachelor of Science in Computer Science, Stanford University,
+                  Stanford, CA, 2019 (GPA: 3.7)
+                </li>
+                <li>
+                  High School Diploma, XYZ High School, Anytown, USA, 2015 (GPA:
+                  3.8)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 text-center">
+      <button
+        onclick="printCV()"
+        id="download-button"
+        class="btn btn-outline-primary background"
+      >
+        Print CV
+      </button>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
