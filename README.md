@@ -28,6 +28,4 @@ The application consists of a simple form where users can enter their personal d
 * Academic Qualifications: User's academic qualifications, with an option to add multiple entries.
 * Image: User's profile image.
 <br/>
-To add a new entry in the "Work Experience" or "Academic Qualifications" sections, click the "Add" button. To remove an entry, click the "Remove" button next to it.
-
-Once the user has entered all the necessary information, they can click the "Create CV" button to generate a CV in HTML format. The CV will be displayed in a new page, where the user can print it or download it as a PDF.
+To add a new entry in the "Work Experience" or "Academic Qualifications" sections, click the "Add" button.Once the user has entered all the necessary information, they can click the "Create CV" button to generate a CV in HTML format. The CV will be displayed in a new page, where the user can print it or download it as a PDF.
