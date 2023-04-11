@@ -15,18 +15,3 @@ To get started with the application, follow these steps:
 <br/>
 2.Open the index.html file in your web browser.
 
-**Usage**<br/>
-The application consists of a simple form where users can enter their personal details, work experience, academic qualifications, and other relevant information. The form includes the following fields:
-
-* Name: User's full name.
-* Contact: User's contact information (email, phone, etc.).
-* Address: User's postal address.
-* Facebook: User's Facebook profile URL (optional).
-* Instagram: User's Instagram profile URL (optional).
-* LinkedIn: User's LinkedIn profile URL (optional).
-* Objective: User's career objective or summary.
-* Work Experience: User's work experience, with an option to add multiple entries.
-* Academic Qualifications: User's academic qualifications, with an option to add multiple entries.
-* Image: User's profile image.
-<br/>
-To add a new entry in the "Work Experience" or "Academic Qualifications" sections, click the "Add" button.Once the user has entered all the necessary information, they can click the "Create CV" button to generate a CV in HTML format. The CV will be displayed in a new page, where the user can print it or download it as a PDF.
