@@ -1,5 +1,5 @@
 **CV Builder**<br/>
-This is a simple web application that allows users to create a basic CV (curriculum vitae) by entering their personal details, work experience, academic qualifications, and other relevant information. The application generates a CV in HTML format, which can be printed or downloaded as a PDF.
+This is a  web application that allows users to create a  CV (curriculum vitae) by entering their personal details, work experience, academic qualifications, and other relevant information. The application generates a CV in HTML format, which can be printed or downloaded as a PDF.
 [Demo Here.](https://aviknayak22.github.io/CV-Builder/)
 
 **Technologies Used**<br/>
