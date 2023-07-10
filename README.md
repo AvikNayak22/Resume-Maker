@@ -1,14 +1,14 @@
-**CV Builder**<br/>
+# Resume Maker
 This is a  web application that allows users to create a  CV (curriculum vitae) by entering their personal details, work experience, academic qualifications, and other relevant information. The application generates a CV in HTML format, which can be printed or downloaded as a PDF.
 [Demo Here.](https://aviknayak22.github.io/CV-Builder/)
 
-**Technologies Used**<br/>
-* HTML5
-* CSS3
-* JavaScript
-* html2pdf library for PDF generation
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- html2pdf library for PDF generation
 
-**Getting Started**<br/>
+## Getting Started
 To get started with the application, follow these steps:
 
 1.Clone the repository to your local machine
