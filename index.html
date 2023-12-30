@@ -9,283 +9,155 @@
   </head>
   <body>
     <div>
-      <h1 class="text-4xl text-center my-2">Resume Maker</h1>
+      <h1 class="my-2 text-center text-4xl">Resume Maker</h1>
       <p class="text-center">By Avik Nayak</p>
     </div>
-    <div class="container mx-auto sm:px-4 bg-[#c3bbff] border my-5 p-5 rounded-[15px] border-solid border-[grey]" id="cv-form">
-      <div class="flex flex-wrap mt-4">
-        <div class="md:w-1/2 pr-4 pl-4">
+    <div class="container mx-auto my-5 rounded-[15px] border border-solid border-[grey] bg-[#c3bbff] p-5 sm:px-4" id="cv-form">
+      <div class="mt-4 flex flex-wrap">
+        <div class="pl-4 pr-4 md:w-1/2">
           <!-- first col -->
           <h3>Personal information</h3>
 
           <div class="mb-4">
-            <label for="nameField" class="block font-[bold] text-[#333] mb-[5px]">Your name</label>
-            <input
-              type="text"
-              id="nameField"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded text-base w-full box-border p-2.5 rounded-[5px] border-2 border-solid border-[#ccc] focus:border-[#007bff] outline-none"
-            />
+            <label for="nameField" class="mb-[5px] block font-[bold] text-[#333]">Your name</label>
+            <input type="text" id="nameField" placeholder="Enter here" class="mb-1 box-border block w-full appearance-none rounded-[5px] border-2 border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-normal text-gray-800 outline-none focus:border-[#007bff]" />
           </div>
 
           <div class="mb-4 mt-2">
-            <label for="contactField" class="block font-[bold] text-[#333] mb-[5px]">Your Contact</label>
-            <input
-              type="text"
-              id="contactField"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded text-base w-full box-border p-2.5 rounded-[5px] border-2 border-solid border-[#ccc] focus:border-[#007bff] outline-none"
-            />
+            <label for="contactField" class="mb-[5px] block font-[bold] text-[#333]">Your Contact</label>
+            <input type="text" id="contactField" placeholder="Enter here" class="mb-1 box-border block w-full appearance-none rounded-[5px] border-2 border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-normal text-gray-800 outline-none focus:border-[#007bff]" />
           </div>
 
           <div class="mb-4 mt-2">
-            <label for="addressField" class="block font-[bold] text-[#333] mb-[5px]">Your Address</label>
-            <textarea
-              id="addressField"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded w-full text-base leading-[1.4] border transition-[border-color] duration-[0.2s] ease-[ease-in-out] p-2.5 rounded-[5px] border-solid border-[#ccc] focus:border-[#6cb2eb] focus:outline-none"
-              rows="5"
-            ></textarea>
+            <label for="addressField" class="mb-[5px] block font-[bold] text-[#333]">Your Address</label>
+            <textarea id="addressField" placeholder="Enter here" class="mb-1 block w-full appearance-none rounded-[5px] border border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-[1.4] text-gray-800 transition-[border-color] duration-[0.2s] ease-[ease-in-out] focus:border-[#6cb2eb] focus:outline-none" rows="5"></textarea>
           </div>
 
           <div class="mb-4 mt-3">
-            <label for="" class="block font-[bold] text-[#333] mb-[5px]">Select your profile picture</label>
-            <input
-              id="imgField"
-              type="file"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded text-base w-full box-border p-2.5 rounded-[5px] border-2 border-solid border-[#ccc] focus:border-[#007bff] border rounded bg-white shadow-[inset_0_1px_1px_rgba(0,0,0,0.075)] w-full text-base p-2.5 border-solid border-[#ccc] hover:border-[#999] focus:shadow-[0_0_0_2px_rgba(0,126,255,0.5)] outline-none"
-            />
+            <label for="" class="mb-[5px] block font-[bold] text-[#333]">Select your profile picture</label>
+            <input id="imgField" type="file" class="mb-1 box-border block w-full appearance-none rounded border border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-normal text-gray-800 shadow-[inset_0_1px_1px_rgba(0,0,0,0.075)] outline-none hover:border-[#999] focus:border-[#007bff] focus:shadow-[0_0_0_2px_rgba(0,126,255,0.5)]" />
           </div>
 
-          <p class="text-gray-600 my-3">Important Links</p>
+          <p class="my-3 text-gray-600">Important Links</p>
 
           <div class="mb-4 mt-2">
             <label for="fbField">Facebook</label>
-            <input
-              type="text"
-              id="fbField"
-              placeholder="Enter here"
-              class="block font-[bold] text-[#333] mb-[5px] appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded text-base w-full box-border p-2.5 rounded-[5px] border-2 border-solid border-[#ccc] focus:border-[#007bff] outline-none"
-            />
+            <input type="text" id="fbField" placeholder="Enter here" class="mb-1 box-border block w-full appearance-none rounded-[5px] border-2 border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 font-[bold] text-base leading-normal text-gray-800 outline-none focus:border-[#007bff]" />
           </div>
 
           <div class="mb-4 mt-2">
-            <label for="instaField" class="block font-[bold] text-[#333] mb-[5px]">Instagram</label>
-            <input
-              type="text"
-              id="instaField"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded text-base w-full box-border p-2.5 rounded-[5px] border-2 border-solid border-[#ccc] focus:border-[#007bff] outline-none"
-            />
+            <label for="instaField" class="mb-[5px] block font-[bold] text-[#333]">Instagram</label>
+            <input type="text" id="instaField" placeholder="Enter here" class="mb-1 box-border block w-full appearance-none rounded-[5px] border-2 border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-normal text-gray-800 outline-none focus:border-[#007bff]" />
           </div>
 
           <div class="mb-4 mt-2">
-            <label for="linkedField" class="block font-[bold] text-[#333] mb-[5px]">LinkedIn</label>
-            <input
-              type="text"
-              id="linkedField"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded text-base w-full box-border p-2.5 rounded-[5px] border-2 border-solid border-[#ccc] focus:border-[#007bff] outline-none"
-            />
+            <label for="linkedField" class="mb-[5px] block font-[bold] text-[#333]">LinkedIn</label>
+            <input type="text" id="linkedField" placeholder="Enter here" class="mb-1 box-border block w-full appearance-none rounded-[5px] border-2 border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-normal text-gray-800 outline-none focus:border-[#007bff]" />
           </div>
         </div>
 
-        <div class="md:w-1/2 pr-4 pl-4">
+        <div class="pl-4 pr-4 md:w-1/2">
           <!-- second column -->
           <h3>Professional Information</h3>
 
           <div class="mb-4 mt-2">
-            <label for="" class="block font-[bold] text-[#333] mb-[5px]">Objective</label>
-            <textarea
-              id="objectiveField"
-              rows="5"
-              placeholder="Enter here"
-              class="block font-[bold] text-[#333] mb-[5px]  appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded w-full text-base leading-[1.4] border transition-[border-color] duration-[0.2s] ease-[ease-in-out] p-2.5 rounded-[5px] border-solid border-[#ccc] focus:border-[#6cb2eb] focus:outline-none"
-            ></textarea>
+            <label for="" class="mb-[5px] block font-[bold] text-[#333]">Objective</label>
+            <textarea id="objectiveField" rows="5" placeholder="Enter here" class="mb-1 block w-full appearance-none rounded-[5px] border border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 font-[bold] text-base leading-[1.4] text-gray-800 transition-[border-color] duration-[0.2s] ease-[ease-in-out] focus:border-[#6cb2eb] focus:outline-none"></textarea>
           </div>
 
           <div class="mb-4 mt-2" id="we">
-            <label for="" class="block font-[bold] text-[#333] mb-[5px]">Work Experience</label>
-            <textarea
-              rows="3"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded weField w-full text-base leading-[1.4] border transition-[border-color] duration-[0.2s] ease-[ease-in-out] p-2.5 rounded-[5px] border-solid border-[#ccc] focus:border-[#6cb2eb] focus:outline-none"
-            ></textarea>
+            <label for="" class="mb-[5px] block font-[bold] text-[#333]">Work Experience</label>
+            <textarea rows="3" placeholder="Enter here" class="weField mb-1 block w-full appearance-none rounded-[5px] border border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-[1.4] text-gray-800 transition-[border-color] duration-[0.2s] ease-[ease-in-out] focus:border-[#6cb2eb] focus:outline-none"></textarea>
             <!-- new textarea -->
-            <div
-              class="container mx-auto sm:px-4 text-center mt-2"
-              id="weAddButton"
-            >
-              <button
-                onclick="addNewWEField()"
-                class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded no-underline bg-gray-900 text-white hover:bg-gray-900 py-1 px-2 leading-tight text-xs"
-              >
-                Add
-              </button>
+            <div class="container mx-auto mt-2 text-center sm:px-4" id="weAddButton">
+              <button onclick="addNewWEField()" class="whitespace-no-wrap inline-block select-none rounded border bg-gray-900 px-2 py-1 text-center align-middle text-xs font-normal leading-tight text-white no-underline hover:bg-gray-900">Add</button>
             </div>
           </div>
 
           <div class="mb-4 mt-2" id="aq">
-            <label for="" class="block font-[bold] text-[#333] mb-[5px]">Academic Qualification</label>
-            <textarea
-              rows="3"
-              placeholder="Enter here"
-              class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded aqField w-full text-base leading-[1.4] border transition-[border-color] duration-[0.2s] ease-[ease-in-out] p-2.5 rounded-[5px] border-solid border-[#ccc] focus:border-[#6cb2eb] focus:outline-none"
-            ></textarea>
-            <div
-              class="container mx-auto sm:px-4 text-center mt-2"
-              id="aqAddButton"
-            >
-              <button
-                onclick="addNewAQField()"
-                class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded no-underline bg-gray-900 text-white hover:bg-gray-900 py-1 px-2 leading-tight text-xs"
-              >
-                Add
-              </button>
+            <label for="" class="mb-[5px] block font-[bold] text-[#333]">Academic Qualification</label>
+            <textarea rows="3" placeholder="Enter here" class="aqField mb-1 block w-full appearance-none rounded-[5px] border border-solid border-[#ccc] bg-white p-2.5 px-2 py-1 text-base leading-[1.4] text-gray-800 transition-[border-color] duration-[0.2s] ease-[ease-in-out] focus:border-[#6cb2eb] focus:outline-none"></textarea>
+            <div class="container mx-auto mt-2 text-center sm:px-4" id="aqAddButton">
+              <button onclick="addNewAQField()" class="whitespace-no-wrap inline-block select-none rounded border bg-gray-900 px-2 py-1 text-center align-middle text-xs font-normal leading-tight text-white no-underline hover:bg-gray-900">Add</button>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container mx-auto sm:px-4 text-center mt-3">
-        <button
-          onclick="createCV()"
-          class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded no-underline bg-gray-900 text-white hover:bg-gray-900 py-3 px-4 leading-tight text-xl"
-        >
-          Create CV
-        </button>
+      <div class="container mx-auto mt-3 text-center sm:px-4">
+        <button onclick="createCV()" class="whitespace-no-wrap inline-block select-none rounded border bg-gray-900 px-4 py-3 text-center align-middle text-xl font-normal leading-tight text-white no-underline hover:bg-gray-900">Create CV</button>
       </div>
     </div>
 
     <!-- cv template -->
-    <div class="container mx-auto sm:px-4 mt-4 hidden border shadow-[0_2px_5px_rgba(0,0,0,0.2)] border-solid border-[grey]" id="cv-template">
+    <div class="container mx-auto mt-4 hidden border border-solid border-[grey] shadow-[0_2px_5px_rgba(0,0,0,0.2)] sm:px-4" id="cv-template">
       <div class="flex flex-wrap">
-        <div class="md:w-1/3 pr-4 pl-4 text-center py-5 background bg-[#2e37a8]">
+        <div class="background bg-[#2e37a8] py-5 pl-4 pr-4 text-center md:w-1/3">
           <!-- first col -->
-          <img
-            src="https://st2.depositphotos.com/1502311/12020/v/950/depositphotos_120206860-stock-illustration-profile-picture-vector.jpg"
-            alt=""
-            class="max-w-full h-auto myimg w-[150px] h-[150px] mb-2.5 rounded-[50%]"
-            id="imgTemplate"
-          />
+          <img src="https://st2.depositphotos.com/1502311/12020/v/950/depositphotos_120206860-stock-illustration-profile-picture-vector.jpg" alt="" class="myimg mb-2.5 h-[150px] w-[150px] max-w-full rounded-[50%]" id="imgTemplate" />
 
-          <div class="container mx-auto sm:px-4 mt-2">
-            <p id="nameT1" class="text-2xl font-[bold] mb-[5px]">Avik Nayak</p>
-            <p id="contactT" class="text-base mb-[5px]">+9457344372</p>
-            <p id="addressT" class="text-base mb-[5px]">34567/45879 Sector 5 Kolkata , India</p>
+          <div class="container mx-auto mt-2 sm:px-4">
+            <p id="nameT1" class="mb-[5px] font-[bold] text-2xl">Avik Nayak</p>
+            <p id="contactT" class="mb-[5px] text-base">+9457344372</p>
+            <p id="addressT" class="mb-[5px] text-base">34567/45879 Sector 5 Kolkata , India</p>
             <hr />
             <p>
-              <a class="text-[#007bff] no-underline text-base hover:underline" id="fbT" href="#">https://www.facebook.com/Learnwebcode</a>
+              <a class="text-base text-[#007bff] no-underline hover:underline" id="fbT" href="#">https://www.facebook.com/Learnwebcode</a>
             </p>
             <p>
-              <a  class="text-[#007bff] no-underline text-base hover:underline" id="instaT" href="#">https://www.instagram.com/Learnwebcode</a>
+              <a class="text-base text-[#007bff] no-underline hover:underline" id="instaT" href="#">https://www.instagram.com/Learnwebcode</a>
             </p>
             <p>
-              <a class="text-[#007bff] no-underline text-base hover:underline" id="linkedT" href="#"
-                >https://www.linkedin.com/SteveGriffith</a
-              >
+              <a class="text-base text-[#007bff] no-underline hover:underline" id="linkedT" href="#">https://www.linkedin.com/SteveGriffith</a>
             </p>
           </div>
         </div>
-        <div class="md:w-2/3 pr-4 pl-4 my-5">
+        <div class="my-5 pl-4 pr-4 md:w-2/3">
           <!-- second col -->
-          <h1 id="nameT2" class="text-center" style="font-weight: 800">
-            Avik Nayak
-          </h1>
+          <h1 id="nameT2" class="text-center" style="font-weight: 800">Avik Nayak</h1>
 
           <!-- objective card  -->
-          <div
-            class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-4"
-          >
-            <div
-              class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900 background bg-[#2e37a8]"
-            >
+          <div class="border-1 relative mt-4 flex min-w-0 flex-col break-words rounded border border-gray-300 bg-white">
+            <div class="border-b-1 background mb-0 border-gray-300 bg-[#2e37a8] px-6 py-3 text-gray-900">
               <h3>Objective</h3>
             </div>
             <div class="flex-auto p-6">
-              <p id="objectiveT" class="text-[1.1rem]">
-                An excellent academic record, ability to understand and test
-                software, working knowledge of Azure, and a strong understanding
-                of core internet technologies. I seek to work as a System
-                Engineer to further my knowledge in the IT domain and utilize my
-                skills.
-              </p>
+              <p id="objectiveT" class="text-[1.1rem]">An excellent academic record, ability to understand and test software, working knowledge of Azure, and a strong understanding of core internet technologies. I seek to work as a System Engineer to further my knowledge in the IT domain and utilize my skills.</p>
             </div>
           </div>
 
           <!-- work experience -->
-          <div
-            class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-4"
-          >
-            <div
-              class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900 background bg-[#2e37a8]"
-            >
+          <div class="border-1 relative mt-4 flex min-w-0 flex-col break-words rounded border border-gray-300 bg-white">
+            <div class="border-b-1 background mb-0 border-gray-300 bg-[#2e37a8] px-6 py-3 text-gray-900">
               <h3>Work Experience</h3>
             </div>
             <div class="flex-auto p-6">
               <ul id="weT" class="ml-0 pl-0">
-                <li class=" ml-2.5 mb-2">
-                  As a Business Analyst at ABC Corporation, I conducted
-                  extensive business analysis to identify areas of improvement
-                  for the organization. Through effective change management
-                  strategies, I was able to implement new processes that
-                  increased efficiency and resulted in a 15% reduction in
-                  expenses.
-                </li>
-                <li class=" ml-2.5 mb-2">
-                  As an Administrative Assistant at XYZ Corporation, I was
-                  responsible for maintaining accurate records, coordinating
-                  travel arrangements, and managing office supplies. With
-                  attention to detail, I successfully oversaw budget control for
-                  the department, resulting in a 10% decrease in expenses.
-                </li>
-                <li class=" ml-2.5 mb-2">
-                  negotiated (action verb) with office supplies vendors (specific
-                  duty), saving the company $12,000 annually (quantified
-                  achievement). Redesigned the e-commerce sales funnel through
-                  A/B testing, resulting in increasing monthly revenue by 112%.
-                </li>
+                <li class="mb-2 ml-2.5">As a Business Analyst at ABC Corporation, I conducted extensive business analysis to identify areas of improvement for the organization. Through effective change management strategies, I was able to implement new processes that increased efficiency and resulted in a 15% reduction in expenses.</li>
+                <li class="mb-2 ml-2.5">As an Administrative Assistant at XYZ Corporation, I was responsible for maintaining accurate records, coordinating travel arrangements, and managing office supplies. With attention to detail, I successfully oversaw budget control for the department, resulting in a 10% decrease in expenses.</li>
+                <li class="mb-2 ml-2.5">negotiated (action verb) with office supplies vendors (specific duty), saving the company $12,000 annually (quantified achievement). Redesigned the e-commerce sales funnel through A/B testing, resulting in increasing monthly revenue by 112%.</li>
               </ul>
             </div>
           </div>
 
           <!-- academic qualification -->
-          <div
-            class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-4"
-          >
-            <div
-              class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900 background"
-            >
+          <div class="border-1 relative mt-4 flex min-w-0 flex-col break-words rounded border border-gray-300 bg-white">
+            <div class="border-b-1 background mb-0 border-gray-300 bg-gray-200 px-6 py-3 text-gray-900">
               <h3>Academic Qualification</h3>
             </div>
             <div class="flex-auto p-6">
               <ul id="aqT" class="ml-0 pl-0">
-                <li class=" ml-2.5 mb-2">
-                  Master of Business Administration, Harvard University, Boston,
-                  MA, 2022 (GPA: 3.9)
-                </li>
-                <li class=" ml-2.5 mb-2">
-                  Bachelor of Science in Computer Science, Stanford University,
-                  Stanford, CA, 2019 (GPA: 3.7)
-                </li>
-                <li class=" ml-2.5 mb-2">
-                  High School Diploma, XYZ High School, Anytown, USA, 2015 (GPA:
-                  3.8)
-                </li>
+                <li class="mb-2 ml-2.5">Master of Business Administration, Harvard University, Boston, MA, 2022 (GPA: 3.9)</li>
+                <li class="mb-2 ml-2.5">Bachelor of Science in Computer Science, Stanford University, Stanford, CA, 2019 (GPA: 3.7)</li>
+                <li class="mb-2 ml-2.5">High School Diploma, XYZ High School, Anytown, USA, 2015 (GPA: 3.8)</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container mx-auto sm:px-4 mt-5 text-center">
-      <button
-        onclick="printCV()"
-        id="download-button"
-        class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white bg-white hover:bg-blue-600 background hidden border shadow-[0_2px_5px_rgba(0,0,0,0.2)] border-solid border-[grey]"
-      >
-        Download CV
-      </button>
+    <div class="container mx-auto mt-5 text-center sm:px-4">
+      <button onclick="printCV()" id="download-button" class="whitespace-no-wrap background hidden select-none rounded border border-solid border-[grey] bg-white px-3 py-1 text-center align-middle font-normal leading-normal text-blue-600 no-underline shadow-[0_2px_5px_rgba(0,0,0,0.2)] hover:bg-blue-600 hover:text-white">Download CV</button>
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
