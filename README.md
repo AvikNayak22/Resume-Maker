@@ -4,9 +4,9 @@ This is a  web application that allows users to create a  CV (curriculum vitae) 
 
 ## Technologies Used
 - HTML5
-- CSS3
+- Tailwind CSS
 - JavaScript
-- html2pdf library for PDF generation
+- jspdf library for PDF generation
 
 ## Getting Started
 To get started with the application, follow these steps:
