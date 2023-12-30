@@ -89,17 +89,20 @@ function createCV() {
 
 // Function to print the CV as a PDF
 function printCV() {
-  const element = document.getElementById("cv-template");
+  const content = document.getElementById("cv-template");
 
-  // Define the options for PDF generation
-  const options = {
-    filename: "cv.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
-  };
+  // Create a new jsPDF instance
+  const pdf = new jsPDF({
+    format: 'a4', // Set the page size to A4
+  });
 
-  // Use html2pdf library with the specified options to generate the PDF
-  html2pdf().set(options).from(element).save();
+  // Add HTML content to the PDF
+  pdf.html(content, {
+    callback: function (pdf) {
+      // Save the PDF as a file
+      pdf.save('CV.pdf');
+    },
+  });
+  
 }
 
